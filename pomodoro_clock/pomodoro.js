@@ -23,17 +23,17 @@ $(document).ready(function(){
             var startBreak = setInterval(breakTimer, 1000);
             $("#num").hide();
           }
-      if(){
-
-      }else(){
-        
-      }
-
-      $("#num").html(addTime);
+        if(addTime % 60 >= 10){
+          $("#num").html(Math.floor(addTime/60) + ":" + addTime % 60);
+        }else{
+          $("#num").html(Math.floor(addTime/60) + ":" + "0" + addTime % 60);
+        }
 
         function breakTimer(){
           $("#timeType").html("Break Time:");
-          $("#breakNum, #timeType").show();
+          $("#breakNum").show();
+              breakTime *=60;
+          $("#timeType").show();
           breakTime -=1;
           if(breakTime === 0){
             clearInterval(startBreak);
@@ -41,7 +41,11 @@ $(document).ready(function(){
             $("#reset").show();
             $("#breakNum, #timeType").hide();
           }
-          $("#breakNum").html(breakTime);
+            if(breakTime % 60 >= 10){
+              $("#breakNum").html(Math.floor(breakTime/60) + ":" + breakTime % 60);
+            }else{
+              $("#breakNum").html(Math.floor(breakTime/60) + ":" + "0" + breakTime % 60);
+            }
         }
     }
 
