@@ -1,0 +1,13 @@
+body {
+    /* background-image: url("https://hdwallsource.com/img/2014/7/background-images-26869-27585-hd-wallpapers.jpg"); */
+    background-size: 100%;
+    background-attachment: fixed;
+    /* font-family: "Montserrat"; */
+    /* text-decoration-color: red; */ 
+}
+.timeDiv, .breakDiv{
+  /* display: inline-block; */
+}
+h3{
+  display: inline;
+}

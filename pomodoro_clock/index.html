@@ -10,34 +10,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="bootstrap.css"/>
+
 
 
 </head>
 <body>
-        <div>
+        <!-- <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
+        rel='stylesheet' type='text/css'> -->
+        <audio id="buzzer"src="http://codingtutorials360.com/14244764.mp3" type="audio/mpeg"></audio>
+        <div class="text-center">
           <h1>The Pomodoro Clock</h1>
           <h3>Classic Javascript</h3>
           <div class="timeDiv">
             <h2 id="title1">Session Time</h2>
-            <a href="#" class="btn btn-primary" id="minus5clock">-</a>
+            <a href="#" class="btn btn-danger" id="minus5clock">-</a>
+            <!-- <a href="#" class="btn btn-primary" id="minus5clock">-</a> -->
             <h3 id="num">5</h3>
-            <a href="#" class="btn btn-primary" id="add5clock">+</a>
+            <a href="#" class="btn btn-danger" id="add5clock">+</a>
             <a href="#" class="btn btn-danger" id="reset">Reset</a>
           </div>
 
           <div class="breakDiv">
             <h2 id="title1">Break Time</h2>
-            <a href="#" class="btn btn-primary" id="minus5break">-</a>
+            <a href="#" class="btn btn-danger" id="minus5break">-</a>
             <h3 id="breakNum">5</h3>
-            <a href="#" class="btn btn-primary" id="add5break">+</a>
+            <a href="#" class="btn btn-danger" id="add5break">+</a>
             <a href="#" class="btn btn-success" id="start">Start</a>
           </div>
         </div>
 
 
-
+    <!-- <script src="pomodoro.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="pomodoro.js"></script>
+
 </body>
 </html>
