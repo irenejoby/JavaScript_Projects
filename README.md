@@ -1,2 +1,2 @@
 # JavaScript_Projects
-All javascript projects done-as learning process
+Javascript applications build for knowledge improvement
